@@ -27,8 +27,6 @@ int main(int argc, char const *argv[])
     {
         printf("valor não encontrado");
     }
-    
-    
-    
+
     return 0;
 }
