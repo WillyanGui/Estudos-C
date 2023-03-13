@@ -1,10 +1,10 @@
 #include<stdio.h>
-int main(int argc, char const *argv[])
+int main()
 {
     float nota;
     printf("Nota do aluno\n");
     scanf("%f", &nota);
-    if (nota>7)
+    if (nota>=7)
     {
         printf("Aprovado\n");
     }
