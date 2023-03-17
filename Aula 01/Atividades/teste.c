@@ -1,33 +1,33 @@
-#include<stdio.h>
-int main()
-{
-    int valor,somapar=0,somaimpar=0,i=0,mediapar=0,mediatotal=0,j=0,k=0,divisaototal;
-    while (valor>0)
-    {
-    printf("Insira um valor ; ");
-    scanf("%d", &valor);
-    mediatotal+=valor;
-     if (valor %2==0)
-            {
-                somapar+=valor;
-                i++;
-            }
-    else
-        { 
-            somaimpar+=valor;
-            j++;
+#include <stdio.h>
 
-        }
-     k++;
-        if (valor==0)
-            {
-                break;
-            }
-    divisaototal=mediatotal/k;
+int main() {
+  int n,              /* numero de alunos na turma          */
+      i,           
+      aluno,          /* indica o aluno corrente            */
+      pontos;         /* numero de pontos do aluno corrente */
+  char gabarito[30],  /* gabarito da prova                  */
+       resp[30];      /* respostas do aluno corrente        */
+  
+  printf("Digite o numero de alunos: ");
+  scanf("%d", &n);
+ 
+  printf("Digite o gabarito da prova: ");
+  for (i = 0; i < 30; i++) 
+    scanf(" %c", &gabarito[i]);  
+  /* O espaco em branco antes do %c e' importante.
+     Ele evita que o return digitado depois do n seja 
+     interpretado como a primeira "letra" do gabarito */
+
+  for (aluno = 1; aluno <= n; aluno++) {
+    pontos = 0;
+    printf("Digite as respostas do aluno %d: ", aluno);
+    for (i = 0; i < 30; i++) {
+      scanf(" %c", &resp[i]);  /* atencao para o espaco em branco */
+      if (resp[i] == gabarito[i])
+        pontos = pontos + 1;
     }
-    mediapar=somapar/i;
-    printf("total de numeros Pares : %d , total de media par : %d \n",i,mediapar);
-    printf("total de numeros impares : %d\n",j);
-    printf("media geral dos valores : %d\n", divisaototal);
-   
+    printf("O aluno %d fez %d pontos\n", aluno, pontos);
+  }
+
+  return 0; 
 }
