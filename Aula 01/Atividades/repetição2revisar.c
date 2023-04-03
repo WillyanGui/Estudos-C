@@ -30,3 +30,7 @@ int main()
     //printf("menor salario : %d", menor);
     return 0;
 }
+
+
+
+
