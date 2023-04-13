@@ -11,8 +11,6 @@ int main()
         printf("não foi possivel salver memoria \n");
         exit(1);
     }
-    
-
     for ( i = 0; i < n; i++)
     {
         printf("Insira os valores de cada array : ");

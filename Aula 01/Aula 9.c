@@ -17,5 +17,5 @@ int main()
     m = maior(x,y);
     printf("o maior numero e %.2f :" , m);
     return 0;
-}
+}   
 

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1680566242 source:c:\users\willy\onedrive\Área de trabalho\aeds1\laboratorio\testlab\carta.c
+	<stdio.h>
+	<time.h>
+	<stdlib.h>
+	"carta.h"
+
+1680714775 c:\users\willy\onedrive\Área de trabalho\aeds1\laboratorio\testlab\carta.h
+	<time.h>
+
+1680712577 source:c:\users\willy\onedrive\Área de trabalho\aeds1\laboratorio\testlab\main.c
+	"carta.h"
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

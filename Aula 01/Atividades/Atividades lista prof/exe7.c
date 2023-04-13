@@ -1,21 +1,21 @@
-#include<stdio.h>
-#include<time.h>
-#include<stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
-
-void *tamanho(int n, char ch){
-    char *array=malloc(n*sizeof(char));
-    char ch;
-    fgets()
-    return array;
+void sub(char *str, char c) {
+    for (int i = 0; str[i] != '\0'; i++) {
+        if (str[i] == c) {
+            str[i] = ' ';
+        }
+    }
 }
 
-
-int main()
-{
-    int n;
-    printf("escolha o tamanho do array de char : ");
-    scanf("%d",&n);
-    int *array=tamanho(n);
+int main() {
+    char str[100], c;
+    printf("Digite um texto: ");
+    fgets(str, 100, stdin); // lê uma string do teclado
+    printf("Digite o caractere que deseja substituir: ");
+    scanf("%c", &c);
+    sub(str, c);
+    printf("Texto modificado: %s\n", str);
     return 0;
 }

@@ -8,10 +8,6 @@ void ponteiros(float *a, float *b){
     *b=temp;
 
 }
-
-
-
-
 int main()
 {
     float x,y,z;

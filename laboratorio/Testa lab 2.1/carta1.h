@@ -9,6 +9,7 @@ typedef struct
     char naipe;
 }Carta;
 
-void inicializa(Carta *carta, int valor , char naipe);
 
+void *compracarta(int *compra, char *naipe);
+//void imprimecarta(char Carta);
 #endif

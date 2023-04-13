@@ -6,7 +6,7 @@
     struct tipo_pessoa
     {
         int idade;
-        float peso;
+        float *peso;
         char nome[tam];
     };
 
@@ -16,11 +16,13 @@ int main()
 {
     setlocale(LC_ALL, "portuguese");
     int idade=33;
+    int n;
 // Criando e inicializando a variavel
-    tipo_pessoa pes = {0, 0.0, "teste"}; // definiu pes
+    tipo_pessoa pes = {0,"teste"}; // definiu pes
+    pes.peso=
     printf("inicio\n");
     printf("pes.idade : %d\n", pes.idade);
-    printf("pes.peso : %.2f\n",pes.peso);
+    printf("pes.peso : %.2f\n",*(pes.peso));
     printf("pes.nome : %s\n",pes.nome);
 
     //Atribuindo valores ao campo
