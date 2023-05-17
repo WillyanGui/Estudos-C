@@ -28,7 +28,7 @@ int main()
     //Atribuindo valores ao campo
 
     pes.idade=10;
-    pes.peso=11.2;
+    pes.peso=11;
     strcpy(pes.nome, "Willyan");
 
     // valores fixos no codigo

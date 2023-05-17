@@ -6,8 +6,6 @@ typedef struct Aulalab3
     int peso;
     int *idade;
 }lab;
-
-
 void inicializa(lab *l, int peso, int idade){
     int n;
     l->peso=peso;
@@ -15,7 +13,6 @@ void inicializa(lab *l, int peso, int idade){
     *(l->idade)=idade;
 
 }
-
 int main()
 {
     int valor,idade;
